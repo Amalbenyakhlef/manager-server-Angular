@@ -21,7 +21,7 @@ export class AddAccountComponent implements OnInit {
       nom: this.nom,
       statut: this.statut,
     };
-  
+    console.log(newAccount);
     this.sendAccToHome.emit(newAccount);
   
   }

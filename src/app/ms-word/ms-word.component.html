@@ -1,0 +1,40 @@
+<div class="container">
+    <div [ngStyle]="{
+        'backgroundColor' : bgColor,
+        'color': txtColor,
+        'fontSize': txtSize,
+        'fontFamily': txtFont,
+        'text-align': txtAlign}">   Cours dveloppement web avancé ENICARTHAGE</div>
+
+        <div class="form">
+            <div class="form-group">
+                <label for=""> backgroundColor :</label>
+                <input [(ngModel)]="bgColor" type="text" class="form-control">
+
+                <label for=""> text Align  :</label>
+                <select  [(ngModel)]="txtAlign"  class="form-control">
+                    <option *ngFor ="let align of AlignList"  [value]="align">{{align}}</option>
+
+                </select>
+
+                <label for=""> text color :</label>
+                <input [(ngModel)]="txtColor" type="text" class="form-control">
+
+          
+                <label for=""> text size :</label>
+                <input  #inp (change)="changeSize(inp.value)" type="text" class="form-control"> 
+
+                
+                <label for=""> text Font  :</label>
+                <select  [(ngModel)]="txtFont"  class="form-control">
+                    <option *ngFor ="let align of FontList"  [value]="align">{{align}}</option>
+
+                </select>
+
+
+            </div>
+        </div>
+        
+
+    </div>
+

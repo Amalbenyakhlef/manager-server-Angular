@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Account } from 'src/app/models/account';
 @Component({
   selector: 'app-home-account',
@@ -6,15 +6,14 @@ import { Account } from 'src/app/models/account';
   styleUrls: ['./home-account.component.css'],
 })
 export class HomeAccountComponent implements OnInit {
+
+  
   listAccounts: Account[] = [
     {
       nom: 'master account',
       statut: 'active',
     },
-    {
-      nom: 'Amal account',
-      statut: 'inactive',
-    },
+   
   ];
 
   constructor() {}

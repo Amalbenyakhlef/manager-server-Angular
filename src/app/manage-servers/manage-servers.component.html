@@ -1,0 +1,15 @@
+<div class="container">
+  <ol>
+    <!-- the ngClasse to show the  -->
+    <li
+      [ngClass]="affecterClasse(serv.statut)"
+      class="list-group-item"
+      *ngFor="let serv of tabServers"
+    >
+      {{ serv.name }} | {{ serv.type }} | {{ serv.statut }}
+      <span class="badge bg-secondary">{{ serv.statut }}</span>
+    </li>
+  </ol>
+
+  <button class="btn btn-success" (click)="addNewServer()"> Add server</button>
+</div>

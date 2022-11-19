@@ -7,13 +7,17 @@ import { AddAccountComponent } from './accounts/add-account/add-account.componen
 import { HomeAccountComponent } from './accounts/home-account/home-account.component';
 import { ItemAccountComponent } from './accounts/item-account/item-account.component';
 import { FormsModule } from '@angular/forms';
+import { MsWordComponent } from './ms-word/ms-word.component';
+import { ManageServersComponent } from './manage-servers/manage-servers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddAccountComponent,
     HomeAccountComponent,
-    ItemAccountComponent
+    ItemAccountComponent,
+    MsWordComponent,
+    ManageServersComponent
   ],
   imports: [
     BrowserModule,

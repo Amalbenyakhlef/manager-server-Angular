@@ -1,6 +1,9 @@
 <div class="container">
-    <div class="col-8">
-        
-        <app-item-account  *ngFor="let acc of listAccounts"  [oneAccount]="acc"></app-item-account>
-    </div>
+  <div class="col-8">
+    <app-add-account
+      (sendAccToHome)="addtolistaccount($event)"
+    ></app-add-account>
+    <app-item-account *ngFor="let acc of listAccounts" [oneAccount]="acc">
+    </app-item-account>
+  </div>
 </div>
